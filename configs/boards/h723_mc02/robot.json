@@ -1,0 +1,82 @@
+{
+  "devices": {
+    "bmi088": {
+      "enabled": false 
+    },
+    "led": {
+      "enabled": false
+    },
+    "dmimu": {
+      "enabled": false,
+      "can_bus": "fdcan3",
+      "can_type": "classic",
+      "can_id": "0x04",
+      "master_id": "0x04"
+    },
+    "motors": {
+      "dm": {
+        "id_base": "0x01",
+        "master_id_base": "0x05",
+        "max_motors": 4
+      },
+      "list": [
+        {
+          "name": "RFsteerMotor",
+          "model": "dji_gm6020",
+          "can_bus": "fdcan3",  
+          "can_type": "classic",
+          "can_id": "0x205"
+        },
+        {
+          "name": "LFsteerMotor",
+          "model": "dji_gm6020",
+          "can_bus": "fdcan2",
+          "can_type": "classic",
+          "can_id": "0x206"
+        },
+        {
+          "name": "RRsteerMotor",
+          "model": "dji_gm6020",
+          "can_bus": "fdcan3",
+          "can_type": "classic",
+          "can_id": "0x206"
+        },
+        {
+          "name": "LRsteerMotor",
+          "model": "dji_gm6020",
+          "can_bus": "fdcan2",
+          "can_type": "classic",
+          "can_id": "0x205"
+        },
+        {
+          "name": "RFdriveMotor",
+          "model": "dji_m3508",
+          "can_bus": "fdcan3",
+          "can_type": "classic",
+          "can_id": "0x202"
+        },        
+        {
+          "name": "LFdriveMotor",
+          "model": "dji_m3508",
+          "can_bus": "fdcan2",
+          "can_type": "classic",
+          "can_id": "0x207"
+        },  
+        {
+          "name": "RRdriveMotor",
+          "model": "dji_m3508",
+          "can_bus": "fdcan3",
+          "can_type": "classic",
+          "can_id": "0x201"
+        },  
+        {
+          "name": "LRdriveMotor",
+          "model": "dji_m3508",
+          "can_bus": "fdcan2",
+          "can_type": "classic",
+          "can_id": "0x208"
+        } 
+      ]
+    }
+  }
+}
